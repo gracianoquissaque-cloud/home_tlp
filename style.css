@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.link-home {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.link-home:hover {
+    background-color: #0056b3;
+}
+
+/* TABELA */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* TEXTO CSS */
+h1 {
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #555;
+}
+
+p {
+    margin: 10px 50px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* LINK VOLTAR */
+.voltar {
+    display: inline-block;
+    margin: 15px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}

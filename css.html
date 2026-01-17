@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>CSS – Cascading Style Sheets</title>
+    <title>CSS – TLP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,31 +15,33 @@
 
 <h2>1. O que é CSS?</h2>
 <p>
-CSS (Cascading Style Sheets, ou Folhas de Estilo em Cascata) é a linguagem usada para definir a aparência visual de páginas web feitas em HTML.  
-Ele controla cores, fontes, tamanhos, espaçamentos, bordas, posicionamento e muitos outros aspectos visuais dos elementos HTML.
+CSS (Cascading Style Sheets – Folhas de Estilo em Cascata) é a linguagem usada para definir o estilo visual de páginas web feitas em HTML.  
+Ele controla cores, fontes, tamanhos, espaçamentos, bordas, layouts e muito mais, tornando as páginas mais bonitas e organizadas.
 </p>
 
-<h2>2. Por que o CSS é importante?</h2>
+<h2>2. Importância do CSS</h2>
 <p>
-Separar o conteúdo do design é fundamental. Com CSS, podemos alterar a aparência de várias páginas de forma consistente, sem precisar editar cada página individualmente.  
-Além disso, CSS permite criar páginas <strong>responsivas</strong> que funcionam bem em computadores, tablets e celulares.
+Separar o conteúdo da apresentação é essencial. Com CSS você pode:  
+<ul>
+    <li>Alterar a aparência de várias páginas de forma consistente</li>
+    <li>Criar páginas responsivas para diferentes telas</li>
+    <li>Manter o código mais limpo e fácil de manter</li>
+</ul>
 </p>
 
 <h2>3. Tipos de CSS</h2>
 
 <h3>3.1 CSS Inline</h3>
 <p>
-Aplicado diretamente nas tags HTML usando o atributo <strong>style</strong>.  
+Aplicado diretamente em uma tag HTML usando o atributo <strong>style</strong>.  
 Exemplo:
 </p>
 <pre>&lt;p style="color: red; font-weight: bold;"&gt;Texto vermelho e em negrito&lt;/p&gt;</pre>
-<p>
-Não é recomendado para projetos grandes, pois mistura conteúdo com design.
-</p>
+<p>Não recomendado para grandes projetos, pois mistura conteúdo e estilo.</p>
 
 <h3>3.2 CSS Interno</h3>
 <p>
-Definido dentro da própria página HTML usando a tag <strong>&lt;style&gt;</strong> no <strong>head</strong>.  
+Definido dentro do &lt;head&gt; da página usando a tag &lt;style&gt;.  
 Exemplo:
 </p>
 <pre>
@@ -50,29 +52,32 @@ h1 {
 }
 &lt;/style&gt;
 </pre>
+<p>Útil quando o estilo será usado apenas nesta página.</p>
 
 <h3>3.3 CSS Externo</h3>
 <p>
-Definido em um arquivo separado (como <strong>style.css</strong>) e vinculado ao HTML com <strong>&lt;link&gt;</strong>.  
-É o método mais usado, porque permite reaproveitar estilos em várias páginas e facilita a manutenção.
+Definido em arquivo separado (style.css) e vinculado com &lt;link&gt;.  
+Exemplo:
 </p>
+<pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+<p>Método mais recomendado para projetos grandes, pois facilita manutenção e reutilização.</p>
 
 <h2>4. Propriedades importantes do CSS</h2>
 
 <h3>4.1 Cores</h3>
 <p>
-Podemos alterar a cor do texto e do fundo usando <strong>color</strong> e <strong>background-color</strong>.  
-Exemplo:
+Podemos alterar a cor do texto (<strong>color</strong>) e do fundo (<strong>background-color</strong>).  
+Exemplo visual abaixo:
 </p>
-<ul>
-    <li>color: vermelho → texto em vermelho</li>
-    <li>background-color: azul → fundo azul</li>
-</ul>
+<div class="exemplo">
+    <p style="color:#e74c3c;">Texto Vermelho</p>
+    <p style="background-color:#f1c40f;">Fundo Amarelo</p>
+</div>
 
-<h3>4.2 Fontes e tamanhos</h3>
+<h3>4.2 Fontes e tamanho</h3>
 <ul>
-    <li>font-family → define o tipo de letra</li>
-    <li>font-size → define o tamanho da fonte</li>
+    <li>font-family → define tipo de letra</li>
+    <li>font-size → define tamanho da fonte</li>
 </ul>
 
 <h3>4.3 Margens e espaçamento</h3>
@@ -82,66 +87,71 @@ Exemplo:
 </ul>
 
 <h3>4.4 Bordas</h3>
-<p>Exemplo:</p>
 <ul>
-    <li>border: 2px solid black → borda preta de 2px sólida</li>
+    <li>border → define borda de elementos</li>
 </ul>
 
 <h3>4.5 Layout e posicionamento</h3>
-<p>Algumas propriedades importantes:</p>
 <ul>
-    <li>text-align → alinhamento do texto</li>
+    <li>text-align → alinhamento de texto</li>
     <li>display → block, inline, flex</li>
-    <li>float → posiciona elementos ao lado</li>
+    <li>float → posiciona elementos lado a lado</li>
 </ul>
 
-<h2>5. Exemplos Visuais</h2>
-
-<p>Botão estilizado:</p>
-<a href="#" class="botao">Clique Aqui</a>
-
-<p>Tabela estilizada:</p>
+<h2>5. Tabela Profissional</h2>
+<p>Exemplo de tabela estilizada, elegante e organizada:</p>
 <table>
-    <tr>
-        <th>Propriedade</th>
-        <th>Exemplo</th>
-    </tr>
-    <tr>
-        <td>Cor do texto</td>
-        <td style="color: #e91e63;">Rosa</td>
-    </tr>
-    <tr>
-        <td>Cor de fundo</td>
-        <td style="background-color: #ffeb3b;">Amarelo</td>
-    </tr>
-    <tr>
-        <td>Borda</td>
-        <td style="border: 2px solid #009688;">Turquesa</td>
-    </tr>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Exemplo Visual</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cor do texto</td>
+            <td style="color:#e91e63;">Rosa</td>
+            <td>Define a cor do texto de um elemento.</td>
+        </tr>
+        <tr>
+            <td>Cor de fundo</td>
+            <td style="background-color:#ffeb3b;">Amarelo</td>
+            <td>Define a cor de fundo de um elemento.</td>
+        </tr>
+        <tr>
+            <td>Borda</td>
+            <td style="border:2px solid #009688;">Turquesa</td>
+            <td>Adiciona borda com espessura, cor e estilo definidos.</td>
+        </tr>
+        <tr>
+            <td>Padding</td>
+            <td style="padding:10px; background-color:#dff9fb;">Espaço interno</td>
+            <td>Cria espaço dentro do elemento, entre o conteúdo e a borda.</td>
+        </tr>
+        <tr>
+            <td>Margin</td>
+            <td style="margin:10px; background-color:#f6e58d;">Espaço externo</td>
+            <td>Cria espaço fora do elemento, separando de outros elementos.</td>
+        </tr>
+    </tbody>
 </table>
 
-<h2>6. Exemplo de Imagens com CSS</h2>
-<p>Podemos usar imagens online e aplicar estilos como borda, sombra e arredondamento:</p>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/CSS3_logo_and_wordmark.svg/512px-CSS3_logo_and_wordmark.svg.png" alt="Logo CSS3" width="200">
-
-<p>Outro exemplo de imagem com estilo:</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5" width="200">
-
-<h2>7. Boas práticas</h2>
+<h2>6. Boas Práticas</h2>
 <ul>
     <li>Separar conteúdo (HTML) de estilo (CSS)</li>
     <li>Usar CSS externo sempre que possível</li>
-    <li>Testar em diferentes tamanhos de tela (responsividade)</li>
     <li>Manter cores e fontes consistentes</li>
+    <li>Testar a página em diferentes tamanhos de tela (responsividade)</li>
 </ul>
 
-<h2>8. Conclusão</h2>
+<h2>7. Conclusão</h2>
 <p>
 O CSS é essencial para criar páginas web bonitas, funcionais e responsivas.  
 Aprender suas propriedades, tipos, exemplos visuais e boas práticas garante um site completo e bem estruturado.
 </p>
 
 </div>
+
 </body>
 </html>

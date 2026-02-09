@@ -1,3 +1,22 @@
+:root {
+    --primary: #1e7f5c;
+    --primary-dark: #16664a;
+    --secondary: #f1f5f9;
+    --accent: #f4c430;
+
+    --text-main: #1f2933;
+    --text-light: #6b7280;
+
+    --bg-main: #f8fafc;
+    --white: #ffffff;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.12);
+}
 
 * {
     margin: 0;
@@ -7,206 +26,164 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f6fa;
-    color: #2f3640;
-    line-height: 1.6;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
 }
 
 a {
+    color: var(--primary);
     text-decoration: none;
-    color: inherit;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--primary-dark);
 }
 
 a.voltar {
     display: inline-block;
-    margin: 20px;
-    padding: 8px 15px;
-    background-color: #dcdde1;
-    color: #2f3640;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    margin: 25px;
+    padding: 10px 20px;
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
 }
 
 a.voltar:hover {
-    background-color: #718093;
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .home-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1e7f5c, #145c43);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    padding: 20px;
-    animation: fadeIn 1s ease-in-out;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .home-container h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 3rem;
     font-weight: 700;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    color: var(--white);
+    margin-bottom: 15px;
 }
 
 .home-container p {
-    font-size: 20px;
+    max-width: 600px;
+    font-size: 1.15rem;
+    color: #e5f3ee;
     margin-bottom: 40px;
-    font-weight: 400;
 }
 
 .home-link {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #ffdd59;
-    color: #2f3542;
-    padding: 20px 60px;
-    font-size: 22px;
+    padding: 14px 50px;
+    background-color: var(--accent);
+    color: #1f2933;
+    font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 .home-link:hover {
-    background-color: #ffa502;
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 35px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
 }
 
 table thead {
-    background-color: #6a11cb;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--white);
 }
 
-table th, table td {
-    padding: 12px 15px;
+table th {
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 16px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
 }
 
 table tbody tr:hover {
-    background-color: #dcdde1;
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
+    background-color: var(--secondary);
 }
 
-table a {
-    display: inline-block;
-    padding: 6px 15px;
-    background-color: #ffdd59;
-    color: #2f3542;
-    font-weight: 600;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+table td a {
+    padding: 6px 14px;
+    background-color: var(--accent);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    color: #1f2933;
 }
 
-table a:hover {
-    background-color: #ffa502;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+table img {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
 }
 
-h1, h2, h3 {
-    margin-bottom: 15px;
-    color: #2f3640;
-}
-
-p, ul, pre {
-    margin-bottom: 20px;
-}
-
-ul li {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.exemplo p {
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-img {
-    margin: 15px 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 992px) {
-    .home-container h1 {
-        font-size: 42px;
-    }
-    .home-container p {
-        font-size: 18px;
-    }
-    .home-link {
-        padding: 15px 40px;
-        font-size: 20px;
-    }
-    table th, table td {
-        padding: 10px;
-    }
+p {
+    color: var(--text-light);
 }
 
 @media (max-width: 768px) {
-    .home-container h1 {
-        font-size: 36px;
-    }
-    .home-container p {
-        font-size: 16px;
-    }
-    .home-link {
-        padding: 12px 30px;
-        font-size: 18px;
-    }
     .container {
-        margin: 20px;
-        padding: 15px;
+        padding: 20px;
+        margin: 25px 10px;
     }
-    table {
-        font-size: 14px;
+
+    .home-container h1 {
+        font-size: 2.3rem;
     }
-}
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    table img {
+        width: 80px;
+        heiimaheihei

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>T1 - Introdução ao CSS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* CSS INTERNO */
+
+.exemplo-interno{
+background-color:#2c3e50;
+color:white;
+padding:15px;
+border-radius:6px;
+margin-top:10px;
+}
+
+.caixa{
+border:1px solid #ddd;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+background:#f9f9f9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>T1 - Introdução ao CSS</h1>
+
+<nav>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="t1.html">T1</a></li>
+<li><a href="t2.html">T2</a></li>
+<li><a href="t3.html">T3</a></li>
+<li><a href="t4.html">T4</a></li>
+<li><a href="t5.html">T5</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<section class="container">
+
+<h2>Introdução ao CSS</h2>
+
+<p>
+CSS (Cascading Style Sheets) é uma linguagem utilizada para definir o estilo e a apresentação de páginas Web.
+Com o CSS é possível controlar cores, tamanhos de texto, espaçamentos, posicionamento de elementos
+e o layout geral de um website.
+</p>
+
+<p>
+Enquanto o HTML é responsável pela estrutura da página, o CSS é responsável pela parte visual.
+A combinação dessas duas tecnologias permite criar páginas modernas, organizadas e visualmente agradáveis.
+</p>
+
+<div class="caixa">
+
+<h2>Importância do CSS no Desenvolvimento Web</h2>
+
+<p>
+O CSS é fundamental para o desenvolvimento Web porque permite separar o conteúdo da apresentação.
+Isso facilita a manutenção do código e torna o desenvolvimento mais organizado.
+</p>
+
+<p>Algumas vantagens do CSS incluem:</p>
+
+<ul>
+
+<li>Melhor organização do código</li>
+
+<li>Facilidade para alterar o design do website</li>
+
+<li>Possibilidade de aplicar o mesmo estilo em várias páginas</li>
+
+<li>Melhoria na experiência do utilizador</li>
+
+<li>Criação de layouts modernos e responsivos</li>
+
+</ul>
+
+</div>
+
+<h2>Tipos de Folhas de Estilo</h2>
+
+<p>
+Existem três formas principais de aplicar CSS em páginas Web:
+</p>
+
+<div class="caixa">
+
+<h3>1. CSS Inline</h3>
+
+<p>
+O CSS Inline é aplicado diretamente dentro do elemento HTML utilizando o atributo <strong>style</strong>.
+</p>
+
+<p style="background:#e74c3c;color:white;padding:15px;border-radius:6px;">
+Este é um exemplo de CSS Inline aplicado diretamente na tag HTML.
+</p>
+
+<p>
+Este método é pouco utilizado em projetos grandes, pois dificulta a manutenção do código.
+</p>
+
+</div>
+
+<div class="caixa">
+
+<h3>2. CSS Interno</h3>
+
+<p>
+O CSS Interno é definido dentro da própria página HTML através da tag
+<strong>&lt;style&gt;</strong> localizada no cabeçalho da página.
+</p>
+
+<p class="exemplo-interno">
+Este exemplo utiliza CSS interno definido dentro da própria página HTML.
+</p>
+
+<p>
+Este método é útil quando queremos aplicar estilos específicos apenas para uma página.
+</p>
+
+</div>
+
+<div class="caixa">
+
+<h3>3. CSS Externo</h3>
+
+<p>
+O CSS Externo é definido em um ficheiro separado com extensão
+<strong>.css</strong>. Esse ficheiro é ligado ao HTML através da tag
+<strong>&lt;link&gt;</strong>.
+</p>
+
+<p class="exemplo-externo">
+Este exemplo utiliza CSS externo aplicado através do ficheiro style.css.
+</p>
+
+<p>
+Este é o método mais recomendado no desenvolvimento Web,
+pois permite reutilizar estilos em várias páginas e manter o código mais organizado.
+</p>
+
+</div>
+
+</section>
+
+</body>
+</html>

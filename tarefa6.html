@@ -102,7 +102,7 @@
             transform: translateY(-2px);
         }
 
-        /* Tabela de Exibição */
+        
         .table-container {
             background-color: var(--card-background);
             padding: 30px;
@@ -178,6 +178,7 @@
                 
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -260,9 +261,9 @@
         }
 
         function determinarStatus(media) {
-            if (media >= 7.0) {
+            if (media >= 20.0) {
                 return "Aprovado";
-            } else if (media >= 5.0) {
+            } else if (media >= 7.0) {
                 return "Recurso";
             } else {
                 return "Reprovado";
